@@ -1,4 +1,4 @@
-# LeakForge
+# CMOS Leakage Estimation
 
 **From transistor physics to learned leakage models.**
 
@@ -26,8 +26,8 @@ Use Python 3.12 and install the NGSPICE console executable (the recorded runs
 use NGSPICE 43). On Windows:
 
 ```powershell
-git clone https://github.com/BlozerX/LeakForge.git
-cd LeakForge
+git clone https://github.com/BlozerX/CMOS-Leakage-Estimation.git
+cd CMOS-Leakage-Estimation
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements-lock.txt
