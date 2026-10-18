@@ -1,0 +1,17 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Input hashes are part of the experiment. Preserve their original bytes.
+/22n_NMOS_ON.net -text
+/model/** -text
+/model.tar binary
+*.pdf binary
+
+# CSV/netlist hashes must survive checkout on a different operating system.
+/generated/** -text linguist-generated=true
+*.png binary
+*.pkl binary

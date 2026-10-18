@@ -1,0 +1,178 @@
+* Generated isolated nmos; dimensions and terminal order in SI
+.include "../../../model/model/22nm_MGK.pm"
+.options gmin=1e-20 abstol=1e-20 reltol=1e-9 vntol=1e-12
+M1 d g s b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+Vd d 0 0
+Vg g 0 0
+Vs s 0 0
+Vb b 0 0
+.save all @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+.control
+set numdgt=15
+set wr_singlescale
+set wr_vecnames
+set temp=105
+alter Vb=0
+alter Vs=0
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.00085
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.00425
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.017
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.0425
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.08500000000000001
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.17
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.255
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.425
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.595
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.765
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.8075
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.833
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.84575
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.84915
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.85
+alter Vg=0
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.00085
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.00425
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.017
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.0425
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.08500000000000001
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.17
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.255
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.425
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.595
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.765
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.8075
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.833
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.84575
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.84915
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vs=0.85
+alter Vg=0.85
+dc Vd 0 0.85 0.02125
+wrdata nmos_test_V0.85_T105.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+quit
+.endc
+.end

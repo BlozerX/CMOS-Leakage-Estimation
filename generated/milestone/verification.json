@@ -1,0 +1,50 @@
+{
+  "simulator": "ngspice_con.exe",
+  "simulator_version": "******\n** ngspice-43 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2024, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html\n** Creation Date: Jul 13 2024   10:19:33\n******\n",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "model": "model/model/22nm_MGK.pm",
+  "model_sha256": "4f847b38766641a8c3dab59d4d2fea3bbc62f6377fdd4656e9c1b8fa0795a8ef",
+  "supplied_netlist_sha256": "3e30ba4c5efafae72ec6427a68628fb1be7841d933a51318ed9cbd49fe0c8bfa",
+  "pdf_sha256": "41dd9861fb4301f1d2f167132b2370116b1f25ad41dbebfeceae6197303255bd",
+  "row_count": 48,
+  "bias_points": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.4999999999999999,
+    0.5499999999999999,
+    0.6,
+    0.65,
+    0.7000000000000001,
+    0.7500000000000001,
+    0.8000000000000002,
+    0.8500000000000002,
+    0.9000000000000002,
+    0.9500000000000003,
+    1.0,
+    1.05,
+    1.1,
+    1.15,
+    1.2
+  ],
+  "temperatures_C": [
+    30.0,
+    90.0
+  ],
+  "max_KCL_residual_A": 9.201947397852882e-16,
+  "path_only_copy_max_KCL_residual_A": 1.1350470622237302e-15,
+  "max_normalized_KCL_residual": 1.1034180036237224e-05,
+  "max_gate_current_A": 3.476839616212146e-08,
+  "max_gate_current_tunnelling_disabled_A": 4.440892098500626e-16,
+  "warnings": [
+    "Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored."
+  ],
+  "passed": true
+}

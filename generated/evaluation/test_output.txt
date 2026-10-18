@@ -1,0 +1,13 @@
+test_device_terminal_biases_and_conservation (test_workflow.WorkflowChecks.test_device_terminal_biases_and_conservation) ... ok
+test_generated_netlists_use_existing_relative_model_includes (test_workflow.WorkflowChecks.test_generated_netlists_use_existing_relative_model_includes) ... ok
+test_isolated_replay_validates_supply_accounting (test_workflow.WorkflowChecks.test_isolated_replay_validates_supply_accounting) ... ok
+test_learned_model_charge_conservation_and_domain_guard (test_workflow.WorkflowChecks.test_learned_model_charge_conservation_and_domain_guard) ... ok
+test_no_operating_condition_crosses_general_split (test_workflow.WorkflowChecks.test_no_operating_condition_crosses_general_split) ... ok
+test_stack_polarity_and_all_logic_patterns (test_workflow.WorkflowChecks.test_stack_polarity_and_all_logic_patterns) ... ok
+test_supplied_files_preserved_and_archive_matches_models (test_workflow.WorkflowChecks.test_supplied_files_preserved_and_archive_matches_models) ... ok
+test_total_terminal_power_matches_all_external_sources (test_workflow.WorkflowChecks.test_total_terminal_power_matches_all_external_sources) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.757s
+
+OK

@@ -1,0 +1,61 @@
+{
+  "seed": 20261018,
+  "dependencies": "NumPy regressions; no optional libraries required",
+  "pdf_features": [
+    "bias_magnitude_V",
+    "temperature_C",
+    "W_nm",
+    "L_nm"
+  ],
+  "pdf_selection": {
+    "NMOS_cond": {
+      "selected_by_validation_asinh_MAE": "local_quadratic_64",
+      "validation_losses": {
+        "polynomial_degree_2": 0.30710033704928835,
+        "local_quadratic_64": 0.15138159319014313
+      }
+    },
+    "NMOS_int": {
+      "selected_by_validation_asinh_MAE": "local_quadratic_64",
+      "validation_losses": {
+        "polynomial_degree_2": 0.37645979561183185,
+        "local_quadratic_64": 0.13955451238629726
+      }
+    },
+    "PMOS_cond": {
+      "selected_by_validation_asinh_MAE": "local_quadratic_64",
+      "validation_losses": {
+        "polynomial_degree_2": 0.35992357685998677,
+        "local_quadratic_64": 0.14783845091563333
+      }
+    },
+    "PMOS_int": {
+      "selected_by_validation_asinh_MAE": "local_quadratic_64",
+      "validation_losses": {
+        "polynomial_degree_2": 0.7336085836053824,
+        "local_quadratic_64": 0.1734984902730931
+      }
+    }
+  },
+  "pdf_split": "All 105 C rows test, all 45 C rows validation, other temperatures training. Every terminal and bias config at a condition stays together.",
+  "general_model": "Structured multilinear regression of log conductance and asinh leakage residuals; source constrained by KCL.",
+  "general_features": [
+    "device_type",
+    "Vd_V",
+    "Vg_V",
+    "Vs_V",
+    "Vb_V",
+    "VDD_V",
+    "temperature_C"
+  ],
+  "general_geometry": "Fixed L=22nm, NMOS W=44nm, PMOS W=88nm; other geometry rejected by caller.",
+  "general_selection": "Structured surrogate specified from physics before viewing test; quadratic baseline for comparison.",
+  "target_scale_A": 1e-12,
+  "relative_error": "100*abs(pred-reference)/max(abs(reference),1e-12 A); also report ordinary MAPE on references >=1pA.",
+  "target_interpretation": "R2 > .99 and error <1%; report mean, p95, max. No single undefined accuracy claim.",
+  "data_sha256": {
+    "pdf_configurations.csv": "feaa521b5fa2ad482b9d749ee715c256728f3f0737c0b4d9cb9985931be5628a",
+    "general_devices.csv": "6db062225f61046c005eab2a77a4ebef86c6580bc6acd3cf81c0fd33949a0101"
+  },
+  "no_test_tuning": true
+}

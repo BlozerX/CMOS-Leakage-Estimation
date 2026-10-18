@@ -1,0 +1,24 @@
+# Local dependencies, caches and private run backups
+/tools/
+/tmp/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+.aws/
+*.pem
+*.key
+*.pfx
+*.p12

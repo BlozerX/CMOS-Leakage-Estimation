@@ -1,0 +1,14 @@
+{
+  "purpose": "Measured-node isolated replay is a diagnostic consistency check, never a predictive feature or reported independent estimate.",
+  "max_isolated_replay_terminal_difference_A": 8.881784197002262e-16,
+  "max_isolated_replay_supply_relative_error_pct": 8.850438171093246e-09,
+  "mean_model_reference_node_supply_error_pct": 0.7547845054982731,
+  "mean_independent_supply_error_pct": 1.1780387260302663,
+  "findings": [
+    "High R2 is dominated by large currents and does not imply uniformly low relative error.",
+    "Relative errors concentrate near cancellations/zero crossings and where log/asinh targets vary rapidly.",
+    "Structured interpolation leaves temperature/supply interpolation error; interstage rail rounding adds circuit error.",
+    "Literal PMOS_int on PDF page3 forward-biases the source/well junction when Vref is negative; it is not conventional PMOS off-state leakage.",
+    "No test-set-driven hyperparameter changes were made; improving <1% uniformly requires a new training/validation design and a fresh test set."
+  ]
+}

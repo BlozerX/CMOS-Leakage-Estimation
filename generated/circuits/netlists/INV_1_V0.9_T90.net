@@ -1,0 +1,26 @@
+* INV inputs 1; isolated source probes positive INTO FET
+.include "../../../model/model/22nm_MGK.pm"
+.options gmin=1e-20 abstol=1e-18 reltol=1e-7 vntol=1e-10 bypass=0 itl1=500
+.temp 90
+VSUP vdd 0 0.9
+VIN_a a 0 0.9
+.nodeset v(y)=0
+VP_no_d y no_d 0
+VP_no_g a no_g 0
+VP_no_s 0 no_s 0
+VP_no_b 0 no_b 0
+Mno no_d no_g no_s no_b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+VP_po_d y po_d 0
+VP_po_g a po_g 0
+VP_po_s vdd po_s 0
+VP_po_b vdd po_b 0
+Mpo po_d po_g po_s po_b pmos W=88n L=22n AD=3872e-18 AS=3872e-18 PD=264n PS=264n
+.control
+set numdgt=15
+set wr_singlescale
+set wr_vecnames
+op
+wrdata INV_1_V0.9_T90.dat v(y) i(VSUP) i(VIN_a) i(VP_no_d) i(VP_no_g) i(VP_no_s) i(VP_no_b) i(VP_po_d) i(VP_po_g) i(VP_po_s) i(VP_po_b)
+quit
+.endc
+.end

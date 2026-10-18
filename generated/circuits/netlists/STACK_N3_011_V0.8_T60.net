@@ -1,0 +1,33 @@
+* STACK_N3 inputs 011; isolated source probes positive INTO FET
+.include "../../../model/model/22nm_MGK.pm"
+.options gmin=1e-20 abstol=1e-18 reltol=1e-7 vntol=1e-10 bypass=0 itl1=500
+.temp 60
+VSUP vdd 0 0.8
+VIN_a a 0 0.0
+VIN_b b 0 0.8
+VIN_c c 0 0.8
+.nodeset v(x1)=0.12 v(x2)=0.12
+VP_n0_d vdd n0_d 0
+VP_n0_g a n0_g 0
+VP_n0_s x1 n0_s 0
+VP_n0_b 0 n0_b 0
+Mn0 n0_d n0_g n0_s n0_b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+VP_n1_d x1 n1_d 0
+VP_n1_g b n1_g 0
+VP_n1_s x2 n1_s 0
+VP_n1_b 0 n1_b 0
+Mn1 n1_d n1_g n1_s n1_b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+VP_n2_d x2 n2_d 0
+VP_n2_g c n2_g 0
+VP_n2_s 0 n2_s 0
+VP_n2_b 0 n2_b 0
+Mn2 n2_d n2_g n2_s n2_b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+.control
+set numdgt=15
+set wr_singlescale
+set wr_vecnames
+op
+wrdata STACK_N3_011_V0.8_T60.dat v(x1) v(x2) i(VSUP) i(VIN_a) i(VIN_b) i(VIN_c) i(VP_n0_d) i(VP_n0_g) i(VP_n0_s) i(VP_n0_b) i(VP_n1_d) i(VP_n1_g) i(VP_n1_s) i(VP_n1_b) i(VP_n2_d) i(VP_n2_g) i(VP_n2_s) i(VP_n2_b)
+quit
+.endc
+.end

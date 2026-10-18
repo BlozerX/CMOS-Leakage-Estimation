@@ -1,0 +1,17 @@
+{
+  "simulator": "ngspice_con.exe",
+  "simulator_version": "******\n** ngspice-43 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2024, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html\n** Creation Date: Jul 13 2024   10:19:33\n******\n",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "model": "model/model/22nm_MGK.pm",
+  "model_sha256": "4f847b38766641a8c3dab59d4d2fea3bbc62f6377fdd4656e9c1b8fa0795a8ef",
+  "supplied_netlist_sha256": "3e30ba4c5efafae72ec6427a68628fb1be7841d933a51318ed9cbd49fe0c8bfa",
+  "pdf_sha256": "41dd9861fb4301f1d2f167132b2370116b1f25ad41dbebfeceae6197303255bd",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  }
+}

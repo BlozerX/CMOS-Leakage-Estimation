@@ -1,0 +1,14 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * ao31 inputs 1010; isolated source probes positive into fet
+
+Doing analysis at TEMP = 30.000000 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+
+No. of Data Rows : 1
+ngspice-43 done
+
+Using SPARSE 1.3 as Direct Linear Solver

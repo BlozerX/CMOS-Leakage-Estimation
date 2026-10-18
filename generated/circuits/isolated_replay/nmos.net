@@ -1,0 +1,731 @@
+* Generated isolated nmos; dimensions and terminal order in SI
+.include "../../../model/model/22nm_MGK.pm"
+.options gmin=1e-20 abstol=1e-20 reltol=1e-9 vntol=1e-12
+M1 d g s b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+Vd d 0 0
+Vg g 0 0
+Vs s 0 0
+Vb b 0 0
+.save all @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+.control
+set numdgt=15
+set wr_singlescale
+set wr_vecnames
+set temp=105
+alter Vd=0.8493311010922348
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006680683610589
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8498240948538587
+alter Vg=0
+alter Vs=0.0953078841984864
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0953078841984864
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493368078491782
+alter Vg=0
+alter Vs=0.0003428324959348
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0003428324959348
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8495488179984275
+alter Vg=0.85
+alter Vs=0.6871585925616444
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.6871585925616444
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0026599897132687
+alter Vg=0.85
+alter Vs=0.001368805596235
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.001368805596235
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8497308482494956
+alter Vg=0
+alter Vs=0.0952980846353912
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0952980846353912
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006714136298658
+alter Vg=0.8497308482494956
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8491513310677405
+alter Vg=0
+alter Vs=0.0003426552730128
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0003426552730128
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006786804781162
+alter Vg=0.8491513310677405
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493629432396498
+alter Vg=0.85
+alter Vs=0.6871357641701056
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.6871357641701056
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006760167867511
+alter Vg=0.8493629432396498
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0030639584035326
+alter Vg=0.85
+alter Vs=0.0015706036450101
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0015706036450101
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493020362119607
+alter Vg=0.0030639584035326
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8486021055091046
+alter Vg=0
+alter Vs=0.1189893580209107
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.1189893580209107
+alter Vg=0
+alter Vs=0.0281305718470497
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0281305718470497
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8486021055091046
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006856489691275
+alter Vg=0.8486021055091046
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008657262863451
+alter Vg=0
+alter Vs=0.0005724282351589
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0005724282351589
+alter Vg=0
+alter Vs=0.0002844320236791
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0002844320236791
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008657262863451
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493230745857544
+alter Vg=0.0008657262863451
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8484003659777197
+alter Vg=0
+alter Vs=0.09521305861962361
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.09521305861962361
+alter Vg=0
+alter Vs=6.361962616780057e-05
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=6.361962616780057e-05
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8484003659777197
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006882286930157999
+alter Vg=0.8484003659777197
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008633414715084
+alter Vg=0
+alter Vs=0.0004481933259124
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0004481933259124
+alter Vg=0
+alter Vs=3.962752163701939e-05
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=3.962752163701939e-05
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008633414715084
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493230968947109
+alter Vg=0.0008633414715084
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.848454297163857
+alter Vg=0
+alter Vs=0.1796652706385304
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.1796652706385304
+alter Vg=0.85
+alter Vs=0.1796437813321986
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.1796437813321986
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.848454297163857
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006875379919828
+alter Vg=0.848454297163857
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008877357790519
+alter Vg=0
+alter Vs=0.1003578926246828
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.1003578926246828
+alter Vg=0.85
+alter Vs=0.1003575632106954
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.1003575632106954
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008877357790519
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493228686440506
+alter Vg=0.0008877357790519
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8469971435380684
+alter Vg=0
+alter Vs=0.000753643163143
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.000753643163143
+alter Vg=0.85
+alter Vs=0.0004161706927096
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0004161706927096
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8469971435380684
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0007064749489289
+alter Vg=0.8469971435380684
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008564139917477
+alter Vg=0
+alter Vs=0.0001583284477496
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0001583284477496
+alter Vg=0.85
+alter Vs=0.0001185671393107
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0001185671393107
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0008564139917477
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493231616921709
+alter Vg=0.0008564139917477
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.848420522354749
+alter Vg=0.85
+alter Vs=0.7451803606017574
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.7451803606017574
+alter Vg=0
+alter Vs=0.0843889490882748
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0843889490882748
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.848420522354749
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0006879704579224
+alter Vg=0.848420522354749
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0009417024831809
+alter Vg=0.85
+alter Vs=0.0009807159324395
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0009807159324395
+alter Vg=0
+alter Vs=0.0004861216666881
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0004861216666881
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0009417024831809
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493223632830116
+alter Vg=0.0009417024831809
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8474050899388679
+alter Vg=0.85
+alter Vs=0.6870729317097419
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.6870729317097419
+alter Vg=0
+alter Vs=0.0002204726483155
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0002204726483155
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8474050899388679
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0007011153885477
+alter Vg=0.8474050899388679
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0009346962066937
+alter Vg=0.85
+alter Vs=0.0009734773114737
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0009734773114737
+alter Vg=0
+alter Vs=3.990335417689401e-05
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=3.990335417689401e-05
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0009346962066937
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493224289238658
+alter Vg=0.0009346962066937
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8474627898382147
+alter Vg=0.85
+alter Vs=0.690726548796059
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.690726548796059
+alter Vg=0.85
+alter Vs=0.6558920235618187
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.6558920235618187
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8474627898382147
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0007003609934202
+alter Vg=0.8474627898382147
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0010128932177071
+alter Vg=0.85
+alter Vs=0.0011300314270825
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0011300314270825
+alter Vg=0.85
+alter Vs=0.0011686600840771
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0011686600840771
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0010128932177071
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493216957665735
+alter Vg=0.0010128932177071
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0044174408368072
+alter Vg=0.85
+alter Vs=0.0030220401451197
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0030220401451197
+alter Vg=0.85
+alter Vs=0.0015496650285564
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0015496650285564
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0044174408368072
+alter Vg=0
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8492886004131759
+alter Vg=0.0044174408368072
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0004056096933292
+alter Vg=0.85
+alter Vs=0.000349160798744
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.000349160798744
+alter Vg=0.85
+alter Vs=0.0002139719550645
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0002139719550645
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.0004056096933292
+alter Vg=0.85
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+alter Vd=0.8493273584462876
+alter Vg=0.0004056096933292
+alter Vs=0
+alter Vb=0
+op
+wrdata nmos.dat v(d) v(g) v(s) v(b) i(vd) i(vg) i(vs) i(vb) @m1[id] @m1[igs] @m1[igd] @m1[igcs] @m1[igcd] @m1[igb] @m1[ibd] @m1[ibs] @m1[isub] @m1[igidl] @m1[igisl] @m1[gds]
+set appendwrite
+quit
+.endc
+.end

@@ -1,0 +1,47 @@
+* AND2 inputs 11; isolated source probes positive INTO FET
+.include "../../../model/model/22nm_MGK.pm"
+.options gmin=1e-20 abstol=1e-18 reltol=1e-7 vntol=1e-10 bypass=0 itl1=500
+.temp 90
+VSUP vdd 0 0.9
+VIN_a a 0 0.9
+VIN_b b 0 0.9
+.nodeset v(z)=0 v(x)=0.135 v(y)=0.9
+VP_pa_d z pa_d 0
+VP_pa_g a pa_g 0
+VP_pa_s vdd pa_s 0
+VP_pa_b vdd pa_b 0
+Mpa pa_d pa_g pa_s pa_b pmos W=88n L=22n AD=3872e-18 AS=3872e-18 PD=264n PS=264n
+VP_pb_d z pb_d 0
+VP_pb_g b pb_g 0
+VP_pb_s vdd pb_s 0
+VP_pb_b vdd pb_b 0
+Mpb pb_d pb_g pb_s pb_b pmos W=88n L=22n AD=3872e-18 AS=3872e-18 PD=264n PS=264n
+VP_na_d z na_d 0
+VP_na_g a na_g 0
+VP_na_s x na_s 0
+VP_na_b 0 na_b 0
+Mna na_d na_g na_s na_b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+VP_nb_d x nb_d 0
+VP_nb_g b nb_g 0
+VP_nb_s 0 nb_s 0
+VP_nb_b 0 nb_b 0
+Mnb nb_d nb_g nb_s nb_b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+VP_no_d y no_d 0
+VP_no_g z no_g 0
+VP_no_s 0 no_s 0
+VP_no_b 0 no_b 0
+Mno no_d no_g no_s no_b nmos W=44n L=22n AD=1936e-18 AS=1936e-18 PD=176n PS=176n
+VP_po_d y po_d 0
+VP_po_g z po_g 0
+VP_po_s vdd po_s 0
+VP_po_b vdd po_b 0
+Mpo po_d po_g po_s po_b pmos W=88n L=22n AD=3872e-18 AS=3872e-18 PD=264n PS=264n
+.control
+set numdgt=15
+set wr_singlescale
+set wr_vecnames
+op
+wrdata AND2_11_V0.9_T90.dat v(z) v(x) v(y) i(VSUP) i(VIN_a) i(VIN_b) i(VP_pa_d) i(VP_pa_g) i(VP_pa_s) i(VP_pa_b) i(VP_pb_d) i(VP_pb_g) i(VP_pb_s) i(VP_pb_b) i(VP_na_d) i(VP_na_g) i(VP_na_s) i(VP_na_b) i(VP_nb_d) i(VP_nb_g) i(VP_nb_s) i(VP_nb_b) i(VP_no_d) i(VP_no_g) i(VP_no_s) i(VP_no_b) i(VP_po_d) i(VP_po_g) i(VP_po_s) i(VP_po_b)
+quit
+.endc
+.end

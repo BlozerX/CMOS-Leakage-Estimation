@@ -1,0 +1,27 @@
+* STACK_P2 inputs 01; isolated source probes positive INTO FET
+.include "../../../model/model/22nm_MGK.pm"
+.options gmin=1e-20 abstol=1e-18 reltol=1e-7 vntol=1e-10 bypass=0 itl1=500
+.temp 30
+VSUP vdd 0 0.7
+VIN_a a 0 0.0
+VIN_b b 0 0.7
+.nodeset v(x1)=0.595
+VP_p0_d x1 p0_d 0
+VP_p0_g a p0_g 0
+VP_p0_s vdd p0_s 0
+VP_p0_b vdd p0_b 0
+Mp0 p0_d p0_g p0_s p0_b pmos W=88n L=22n AD=3872e-18 AS=3872e-18 PD=264n PS=264n
+VP_p1_d 0 p1_d 0
+VP_p1_g b p1_g 0
+VP_p1_s x1 p1_s 0
+VP_p1_b vdd p1_b 0
+Mp1 p1_d p1_g p1_s p1_b pmos W=88n L=22n AD=3872e-18 AS=3872e-18 PD=264n PS=264n
+.control
+set numdgt=15
+set wr_singlescale
+set wr_vecnames
+op
+wrdata STACK_P2_01_V0.7_T30.dat v(x1) i(VSUP) i(VIN_a) i(VIN_b) i(VP_p0_d) i(VP_p0_g) i(VP_p0_s) i(VP_p0_b) i(VP_p1_d) i(VP_p1_g) i(VP_p1_s) i(VP_p1_b)
+quit
+.endc
+.end

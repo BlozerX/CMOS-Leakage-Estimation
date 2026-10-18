@@ -1,0 +1,40 @@
+{
+  "case_count": 250,
+  "conditions": [
+    [
+      0.7,
+      30,
+      "train_domain"
+    ],
+    [
+      0.8,
+      60,
+      "train_domain"
+    ],
+    [
+      0.9,
+      90,
+      "train_domain"
+    ],
+    [
+      0.75,
+      45,
+      "validation"
+    ],
+    [
+      0.85,
+      105,
+      "test"
+    ]
+  ],
+  "all_logic_truth_tables_passed": true,
+  "AO31_function": "Y=(A AND B AND C) OR D; AOI31 plus inverter, per slide 11 circuit.",
+  "current_comparison": "Supply source current drawn = -I(VSUP), equal to one cut over all device terminals directly attached to VDD.",
+  "power_comparison": "VDD*I_supply separately from sum of power supplied by VDD and ideal input drivers.",
+  "estimator": "Independent KCL root solve from learned isolated-device grid; no NGSPICE internal voltages used as features.",
+  "approximation": "Interstage gate voltages rounded to nearest rail in device grid. Rail deviation is recorded per case.",
+  "geometry": "NMOS 44nm, PMOS 88nm, L22nm, diffusion length44nm; no fanout/external load.",
+  "solver_failures": 0,
+  "max_node_error_V": 0.012583526055705896,
+  "AO31_extension_prerequisite": "Simple gate truth tables and supply-current accounting passed; prediction accuracy is not asserted to meet 1%."
+}
